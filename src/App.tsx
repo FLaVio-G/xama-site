@@ -1,11 +1,13 @@
 import React from 'react';
+import Routes from './routes';
+import { BrowserRouter } from 'react-router-dom';
 
-export function App() {
+const App = (): JSX.Element => {
   return (
-    <div className="App">
-    <h1>teste</h1>
-    </div>
-  );
-}
+    <BrowserRouter>
+        <Routes/>
+        </BrowserRouter>
+       );
+};
 
 export default App;
