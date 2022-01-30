@@ -1,13 +1,18 @@
 import React from 'react';
-import Routes from './routes';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import Home from "./pages/Home"
 
-const App = (): JSX.Element => {
+
+function App(){
   return (
-    <BrowserRouter>
-        <Routes/>
-        </BrowserRouter>
-       );
+
+   <Router>
+     <Routes>
+       <Route path = "" element = {<Home/>} />
+     </Routes>
+
+   </Router>
+  );
 };
 
 export default App;

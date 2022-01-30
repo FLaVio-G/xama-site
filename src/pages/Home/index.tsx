@@ -4,7 +4,7 @@ import {Container} from './styles'
 export function Home(){
     return ( 
       <Container>
-       <h1>teste201</h1>
+       <h1>pagina inicial</h1>
       </Container>
     );
   };
