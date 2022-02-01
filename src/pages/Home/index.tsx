@@ -36,7 +36,7 @@ export function Home() {
 
         <span> ADICIONAR AO CARRINHO</span>
 
-        <button />
+        <button/>
       </li>
       <li>
         <img src={vegamsi64} alt="vegamsi64" />
