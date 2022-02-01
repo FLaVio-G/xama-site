@@ -1,6 +1,6 @@
-import { createGlobalStyle} from 'styled-components' 
+import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle`
 :root{
     --background: #F0F2F5;
     --red: #E52E4D;
@@ -26,7 +26,6 @@ html {
         font-size:87.5%; //14px
     }
 }
-//REM = 1rem = font-size 
 body{
     background: var(--background);
     -webkit-font-smoothing: antialiased;
