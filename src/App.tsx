@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
-import Home from "./pages/Home"
+import {Home} from "./pages/Home"
 import Header from './components/Header';
 import { GlobalStyle } from "./styles/global";
+import './miragejs';
 
 
 function App(){

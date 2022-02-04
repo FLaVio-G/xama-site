@@ -1,64 +1,38 @@
+import React, { useState, useEffect } from 'react';
+
 import vegamsi64 from '../../assets/vegamsi64.jpg';
 import { ProductList  } from './styles';
+import { api } from '../../services/api';
+import { formatPrice } from '../../util/format';
 
 
-export function Home() {
+
+
+export function Home () {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() =>{
+    fetch('/api/products')
+    .then(response => response.json())
+    .then(json => console.log(json));
+  }, []);
+ 
   return (
-    <ProductList >
-      <li>
-        <img src={vegamsi64} alt="vegamsi64" />
-        <strong>RX vega 64</strong>
-        <button
-          type="button"
-        ></button>
+    <ProductList>
+    
+        <li>
+          <img/>
+          <strong ></strong>
+          <span></span>
+          <button
+         >
+            <div>
+             
+            </div>
 
-
-        <div>
-          Adicionar ao carrinho
-        </div>
-
-        <span> ADICIONAR AO CARRINHO</span>
-
-        <button />
-      </li>
-
-      <li>
-        <img src={vegamsi64} alt="vegamsi64" />
-        <strong>RX vega 64</strong>
-        <button
-          type="button"
-        ></button>
-
-
-        <div>
-          Adicionar ao carrinho
-        </div>
-
-        <span> ADICIONAR AO CARRINHO</span>
-
-        <button/>
-      </li>
-      <li>
-        <img src={vegamsi64} alt="vegamsi64" />
-        <strong>RX vega 64</strong>
-        <button
-          type="button"
-        ></button>
-
-
-        <div>
-          Adicionar ao carrinho
-        </div>
-
-        <span> ADICIONAR AO CARRINHO</span>
-
-        <button />
-      </li>
-
-      
-    </ProductList >
-
+            <span>ADICIONAR AO CARRINHO</span>
+          </button>
+        </li>
+    </ProductList>
   );
 };
-
-export default Home;
